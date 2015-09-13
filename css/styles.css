@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #ffffff; }
+
+.fondo {
+  overflow: hidden;
+  background: url(../img/logo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain; }
+
+.main {
+  overflow: hidden;
+  height: 85vh;
+  width: 100vw; }
+
+.menu-left {
+  height: 15vh;
+  text-align: center; }
+
+.menu-center {
+  height: 15vh;
+  text-align: center; }
+
+.menu-right {
+  height: 15vh;
+  text-align: center; }
+
+.head {
+  overflow: hidden;
+  height: 10vh;
+  width: 100vw; }
+
+.usmenu {
+  overflow: hidden;
+  height: 10vh;
+  width: 100vw; }
+
+.samuel {
+  background: url(../img/us/1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.iago {
+  background: url(../img/us/2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.tamara {
+  background: url(../img/us/3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.text {
+  text-align: center; }
+
+.back {
+  right: 0px;
+  height: 100%; }
+
+/*# sourceMappingURL=styles.css.map */
