@@ -76,4 +76,15 @@ body {
   right: 0px;
   height: 100%; }
 
+.portfolio_col1 {
+  background-color: #122b40;
+  height: 85vh; }
+
+.portfolio_col2 {
+  background-color: #398439;
+  height: 85vh; }
+
+.portfolio {
+  height: 85vh; }
+
 /*# sourceMappingURL=styles.css.map */
