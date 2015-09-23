@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAC,KAAK",
+"sources": ["styles_desktop.scss"],
+"names": [],
+"file": "styles_desktop.css"
+}
