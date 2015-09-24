@@ -1,5 +1,37 @@
-.section {
-  width: 100vw;
-  height: 100vh; }
+body {
+  background-color: #77b1e6;
+}
 
-/*# sourceMappingURL=styles_desktop.css.map */
+div {
+  height: 100%;
+  width: 4901px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+li:nth-child(even) {
+  background: #831015;
+}
+
+li:nth-child(odd) {
+  background: #0d0303;
+}
+
+span {
+  width: 800px;
+  height: 500px;
+  display: block;
+}
