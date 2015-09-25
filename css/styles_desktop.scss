@@ -1,8 +1,38 @@
-.section {
-  width: 100vw;
-  height:100vh;
+body {
+  background-color: #77b1e6;
+  overflow-y: hidden;
 }
 
-.row-fluid {
+div {
+  height: 100vh;
+  width: 1000vw;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+li:nth-child(even) {
+  background: #831015;
+}
+
+li:nth-child(odd) {
+  background: #0d0303;
+}
+
+span {
+  width: 100vw;
+  height: 100vh;
+  display: block;
 }
