@@ -4,54 +4,58 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/jquery.fullPage.css">
     <link rel="stylesheet" href="../css/styles_desktop.css">
     <title>Galo Negro Portfolio</title>
 </head>
 <body>
-    <div>
-        <ul>
-            <li><section class="bright galonegro">
-                <header></header>
-            </section></li>
-            <li><span class="brighttodark">
+    <div id="fullpage">
+        <div class="section">
+            <section class="slide bright">
+                <div class="col-xs-1 height"></div>
+                <div class="col-xs-10 height">
+                    <div class="col-xs-12">Deseño Web e Deseño Gráfico</div>
+                </div>
+                <div class="col-xs-1 height right"></div>
+            </section>
+            <section class="slide bright">
+                <div class="col-xs-1 height left"></div>
+                <div class="col-xs-10 height">
+                    <header>PROYECTOS</header>
+                </div>
+                <div class="col-xs-1 height right"></div>
+            </section>
+            <section class="slide bright">
+                <div class="col-xs-1 height left"></div>
+                <div class="col-xs-10 height">
+                    <header>NOSOTROS</header>
+                </div>
+                <div class="col-xs-1 height right"></div>
+            </section>
+            <footer class="slide bright">
+                <div class="col-xs-1 height left"></div>
+                <div class="col-xs-10 height">
+                    <header>CONTACTO</header>
+                </div>
+                <div class="col-xs-1 height"></div>
+            </footer>
+        </div>
 
-            </span></li>
-            <li><section class="dark">
-                <header>PROYECTOS</header>
-            </section></li>
-            <li><span class="darktobright">
-
-            </span></li>
-            <li><section class="bright">
-                <header>NOSOTROS</header>
-                <article class="samuel"></article>
-                <article class="iago"></article>
-                <article class="tamara"></article>
-                <article class="kolega"></article>
-            </section></li>
-            <li><span class="brighttodark">
-
-            </span></li>
-            <li><footer class="dark">
-                <header>CONTACTO</header>
-            </footer></li>
-        </ul>
+        <div class="section"></div>
     </div>
 </body>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="../js/jquery.fullPage.min.js"></script>
 <script >
-    $( document ).ready(function() {
-        var mouseWheelEvt = function (event) {
-            if (document.body.doScroll)
-                document.body.doScroll(event.wheelDelta > 0 ? "left" : "right");
-            else if ((event.wheelDelta || event.detail) > 0)
-                document.body.scrollLeft -= 50;
-            else
-                document.body.scrollLeft += 50;
-
-            return false;
-        }
-        document.body.addEventListener("mousewheel", mouseWheelEvt);
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            onLeave: function(index, nextIndex, direction){
+                if(nextIndex>index){$.fn.fullpage.moveSlideRight();}
+                if(index>nextIndex){$.fn.fullpage.moveSlideLeft();}
+                return false;
+            },
+            loopHorizontal: false
+        });
     });
 </script>
 </html>
