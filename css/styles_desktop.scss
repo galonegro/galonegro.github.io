@@ -1,6 +1,7 @@
 $bright: #ffffff;
 $dark: #b92c28;
 $font_color: #000000;
+$font_subtitle: $dark;
 
 @font-face {
   font-family: galonegro;
@@ -40,6 +41,7 @@ body {
 }
 
 .logo{
+  height: 60%;
 }
 
 section header, footer header{
@@ -51,5 +53,68 @@ section header, footer header{
 }
 
 .height {
+  height: 100%;
+}
+
+.subtitulo{
+  text-align: center;
+  font-size: 2em;
+  color: $font_subtitle;
+}
+
+nav {
+  text-align: right;
+  height: 20%;
+  color: $font_subtitle;
+}
+
+.navigation{
+  padding-top: 2.5em;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
+  font-size: 1.5em;
+}
+
+.navigation a{
+  padding-left: 2em;
+}
+
+.language{
+  position: relative;
+}
+
+.language a{
+  padding-left: 2em;
+}
+
+.nav_down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  padding-bottom: 1.5em;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.active{
+  color: $font_color;
+}
+
+a:hover{
+  text-decoration: none;
+  color: $font_color;
+}
+
+.center{
+}
+
+.third{
+}
+
+.full{
   height: 100%;
 }

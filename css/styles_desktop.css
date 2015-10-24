@@ -27,6 +27,9 @@ body {
   background-size: cover;
   -o-background-size: cover; }
 
+.logo {
+  height: 60%; }
+
 section header, footer header {
   font-family: blogger;
   font-size: 4em;
@@ -35,6 +38,52 @@ section header, footer header {
   text-align: center; }
 
 .height {
+  height: 100%; }
+
+.subtitulo {
+  text-align: center;
+  font-size: 2em;
+  color: #b92c28; }
+
+nav {
+  text-align: right;
+  height: 20%;
+  color: #b92c28; }
+
+.navigation {
+  padding-top: 2.5em;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
+  font-size: 1.5em; }
+
+.navigation a {
+  padding-left: 2em; }
+
+.language {
+  position: relative; }
+
+.language a {
+  padding-left: 2em; }
+
+.nav_down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  padding-bottom: 1.5em; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.active {
+  color: #000000; }
+
+a:hover {
+  text-decoration: none;
+  color: #000000; }
+
+.full {
   height: 100%; }
 
 /*# sourceMappingURL=styles_desktop.css.map */
