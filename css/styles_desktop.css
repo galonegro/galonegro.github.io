@@ -45,6 +45,9 @@ section header, footer header {
   font-size: 2em;
   color: #b92c28; }
 
+.red_text {
+  color: #b92c28; }
+
 nav {
   text-align: right;
   height: 20%;
@@ -83,7 +86,35 @@ a:hover {
   text-decoration: none;
   color: #000000; }
 
+.third {
+  padding-bottom: 1em; }
+
 .full {
   height: 100%; }
+
+input {
+  margin-top: 0.5em;
+  border-color: #b92c28 !important;
+  border-radius: 0 !important;
+  border-width: 2px !important; }
+
+textarea {
+  margin-top: 0.5em;
+  border-color: #b92c28 !important;
+  border-radius: 0 !important;
+  border-width: 2px !important; }
+
+.btn, .btn:hover {
+  margin-top: 0.5em;
+  background-color: #b92c28; }
+
+.bubble {
+  background-color: #b92c28;
+  color: #ffffff;
+  padding: 1em;
+  margin-top: 2em; }
+
+.hide {
+  display: none; }
 
 /*# sourceMappingURL=styles_desktop.css.map */

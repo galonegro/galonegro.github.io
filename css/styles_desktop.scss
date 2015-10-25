@@ -62,6 +62,10 @@ section header, footer header{
   color: $font_subtitle;
 }
 
+.red_text{
+  color: $font_subtitle;
+}
+
 nav {
   text-align: right;
   height: 20%;
@@ -113,8 +117,39 @@ a:hover{
 }
 
 .third{
+  padding-bottom: 1em;
 }
 
 .full{
   height: 100%;
+}
+
+input {
+  margin-top: 0.5em;
+  border-color: $dark !important;
+  border-radius: 0 !important;
+  border-width: 2px !important;
+}
+
+textarea {
+  margin-top: 0.5em;
+  border-color: $dark !important;
+  border-radius: 0 !important;
+  border-width: 2px !important;
+}
+
+.btn, .btn:hover {
+  margin-top: 0.5em;
+  background-color: $dark;
+}
+
+.bubble{
+  background-color: $dark;
+  color: $bright;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.hide{
+  display: none;
 }

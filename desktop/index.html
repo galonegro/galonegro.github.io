@@ -20,7 +20,7 @@
                         <a href="#home/3">Contacto</a>
                     </nav>
                     <div class="logo col-xs-12">
-                        <img class="col-xs-offset-4 col-xs-4" src="../img/logo.jpg">
+                        <img class="col-xs-offset-3 col-xs-6" src="../img/logo.jpg">
 
                         <div class="subtitulo col-xs-offset-2 col-xs-8">Deseño Web e Deseño Gráfico</div>
                     </div>
@@ -41,16 +41,20 @@
                     <div class="col-xs-12">
                         <div class="col-xs-12 third">
                             <img class="col-xs-6" src="../img/logo.jpg">
-                            <div class="col-xs-6">Lorem fistrum a peich se calle ustée amatomaa papaar papaar la caidita quietooor amatomaa te va a hasé pupitaa. Ese hombree te va a hasé pupitaa fistro la caidita ahorarr va usté muy cargadoo. Sexuarl hasta luego Lucas te voy a borrar el cerito a wan benemeritaar no puedor te va a hasé pupitaa a wan. Quietooor va usté muy cargadoo torpedo diodenoo tiene musho peligro se calle ustée ese que llega condemor. Por la gloria de mi madre qué dise usteer de la pradera llevame al sircoo papaar papaar a peich mamaar ese hombree.</div>
+                            <div class="col-xs-6">Lorem fistrum a peich se calle ustée amatomaa papaar papaar la caidita quietooor amatomaa te va a hasé pupitaa. Ese hombree te va a hasé pupitaa fistro la caidita ahorarr va usté muy cargadoo.</div>
                         </div>
 
                         <div class="col-xs-12 third">
-                            <img class="col-xs-3 full" src="../img/us/1.jpg">
-                            <img class="col-xs-3 full" src="../img/us/2.jpg">
-                            <img class="col-xs-3 full" src="../img/us/3.jpg">
-                            <img class="col-xs-3 full" src="../img/us/4.jpg">
+                            <img class="col-xs-3 full" src="../img/us/1.jpg" onclick="resetbubbles();showdiv('samuel');">
+                            <img class="col-xs-3 full" src="../img/us/2.jpg" onclick="resetbubbles();showdiv('iago');">
+                            <img class="col-xs-3 full" src="../img/us/3.jpg" onclick="resetbubbles();showdiv('tamara');">
+                            <img class="col-xs-3 full" src="../img/us/4.jpg" onclick="resetbubbles();showdiv('kole');">
                         </div>
-                        <div class="col-xs-12 third subtitulo">Se queres sabes mais sobre nos,<br>fai clic sobre as nosas fotos.</div>
+                        <div id="intro" class="col-xs-12 third subtitulo">Se queres sabes mais sobre nos,<br>fai clic sobre as nosas fotos.</div>
+                        <div id="samuel" class="col-xs-6 third bubble hide">Samuel Gago - blablabla<br>Lorem fistrum a peich se calle ustée amatomaa papaar papaar la caidita quietooor amatomaa te va a hasé pupitaa. Ese hombree te va a hasé pupitaa fistro la caidita ahorarr va usté muy cargadoo.</div>
+                        <div id="iago" class="col-xs-offset-3 col-xs-6 third bubble hide">Iago Laz - blablabla<br>Lorem fistrum a peich se calle ustée amatomaa papaar papaar la caidita quietooor amatomaa te va a hasé pupitaa. Ese hombree te va a hasé pupitaa fistro la caidita ahorarr va usté muy cargadoo.</div>
+                        <div id="tamara" class="col-xs-offset-3 col-xs-6 third bubble hide">Tamara Castro - blablabla<br>Lorem fistrum a peich se calle ustée amatomaa papaar papaar la caidita quietooor amatomaa te va a hasé pupitaa. Ese hombree te va a hasé pupitaa fistro la caidita ahorarr va usté muy cargadoo.</div>
+                        <div id="kole" class="col-xs-offset-6 col-xs-6 third bubble hide">Daniel Gonzalez - blablabla<br>Lorem fistrum a peich se calle ustée amatomaa papaar papaar la caidita quietooor amatomaa te va a hasé pupitaa. Ese hombree te va a hasé pupitaa fistro la caidita ahorarr va usté muy cargadoo.</div>
                     </div>
                 </div>
                 <div class="col-xs-2 height right"></div>
@@ -66,7 +70,7 @@
                     <div class="col-xs-12">
                         <div class="col-xs-12 third">
                             <img class="col-xs-6" src="../img/logo.jpg">
-                            <div class="col-xs-6">Lorem fistrum a peich se calle ustée amatomaa papaar papaar la caidita quietooor amatomaa te va a hasé pupitaa. Ese hombree te va a hasé pupitaa fistro la caidita ahorarr va usté muy cargadoo. Sexuarl hasta luego Lucas te voy a borrar el cerito a wan benemeritaar no puedor te va a hasé pupitaa a wan. Quietooor va usté muy cargadoo torpedo diodenoo tiene musho peligro se calle ustée ese que llega condemor. Por la gloria de mi madre qué dise usteer de la pradera llevame al sircoo papaar papaar a peich mamaar ese hombree.</div>
+                            <div class="col-xs-6">Lorem fistrum a peich se calle ustée amatomaa papaar papaar la caidita quietooor amatomaa te va a hasé pupitaa. Ese hombree te va a hasé pupitaa fistro la caidita ahorarr va usté muy cargadoo.</div>
                         </div>
                         <div class="col-xs-12 third">
                             <img class="col-xs-6" src="../img/logo.jpg">
@@ -94,16 +98,20 @@
                         <div class="col-xs-12">
                             <img class="col-xs-6" src="../img/logo.jpg">
                             <div class="col-xs-6">
-                                info@galonegro.es<br>
-                                Se tes algunha duda ou queres facer unha consulta podes escribirnos sen compromiso<br>
+                                <a class="col-xs-12 red_text" href="mailto:info@galonegro.es">
+                                    info@galonegro.es
+                                </a>
+                                <div class="col-xs-12">
+                                    Se tes algunha duda ou queres facer unha consulta podes escribirnos sen compromiso.
+                                </div>
                                 <form class="col-xs-12" role="form">
                                     <input type="text" class="form-control col-xs-12" id="nombre" placeholder="Nome" >
                                     <input type="email" class="form-control col-xs-12" id="email" placeholder="E-Mail" >
-                                    <textarea type="text" class="form-control col-xs-12" id="contenido" placeholder="Mensaxe" ></textarea>
+                                    <textarea type="text" class="form-control col-xs-12" id="contenido" placeholder="Mensaxe" rows="6"></textarea>
+                                    <input type="submit" class="form-control btn btn-primary">
                                 </form>
                             </div>
                         </div>
-                        <div class="col-xs-12"></div>
                         <div class="col-xs-12"></div>
                     </div>
                 </div>
@@ -136,5 +144,16 @@
             }
         })
     });
+
+    function resetbubbles(){
+        $('#intro').addClass('hide');
+        $('#samuel').addClass('hide');
+        $('#iago').addClass('hide');
+        $('#tamara').addClass('hide');
+        $('#kole').addClass('hide');
+    }
+    function showdiv(id){
+        $('#'+id).removeClass('hide');
+    }
 </script>
 </html>
