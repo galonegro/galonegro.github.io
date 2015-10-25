@@ -43,15 +43,15 @@ section header, footer header {
 .subtitulo {
   text-align: center;
   font-size: 2em;
-  color: #b92c28; }
+  color: #c6000c; }
 
 .red_text {
-  color: #b92c28; }
+  color: #c6000c; }
 
 nav {
   text-align: right;
   height: 20%;
-  color: #b92c28; }
+  color: #c6000c; }
 
 .navigation {
   padding-top: 2.5em;
@@ -94,22 +94,22 @@ a:hover {
 
 input {
   margin-top: 0.5em;
-  border-color: #b92c28 !important;
+  border-color: #c6000c !important;
   border-radius: 0 !important;
   border-width: 2px !important; }
 
 textarea {
   margin-top: 0.5em;
-  border-color: #b92c28 !important;
+  border-color: #c6000c !important;
   border-radius: 0 !important;
   border-width: 2px !important; }
 
 .btn, .btn:hover {
   margin-top: 0.5em;
-  background-color: #b92c28; }
+  background-color: #c6000c; }
 
 .bubble {
-  background-color: #b92c28;
+  background-color: #c6000c;
   color: #ffffff;
   padding: 1em;
   margin-top: 2em; }

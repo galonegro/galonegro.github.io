@@ -1,5 +1,8 @@
 $background: #ffffff;
 $rojo_base: rgba(198, 0, 12, 1);
+$bright: #ffffff;
+$font_color: #000000;
+$font_subtitle: $rojo_base;
 
 html,
 body {
@@ -7,6 +10,11 @@ body {
   padding: 0;
   height: 100%;
   background: $background;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: inherit;
 }
 
 .nopadding {
@@ -21,12 +29,28 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
-  background-size: contain;
+  background-size: 60%;
   -o-background-size: contain;
 }
+.language {
+  overflow: hidden;
+  height:10vh;
+  width:100vw;
+  color: $font_color;
+  text-align: right;
+  position: relative;
+}
+
+.nav_down {
+  position: absolute;
+  right: 0;
+  height: auto;
+  padding: 1em;
+}
+
 .main {
   overflow: hidden;
-  height:85vh;
+  height:75vh;
   width:100vw;
 }
 

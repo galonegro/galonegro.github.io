@@ -5,6 +5,10 @@ body {
   height: 100%;
   background: #ffffff; }
 
+a, a:hover {
+  text-decoration: none;
+  color: inherit; }
+
 .nopadding {
   padding: 0 !important;
   margin: 0 !important; }
@@ -16,12 +20,26 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
-  background-size: contain;
+  background-size: 60%;
   -o-background-size: contain; }
+
+.language {
+  overflow: hidden;
+  height: 10vh;
+  width: 100vw;
+  color: #000000;
+  text-align: right;
+  position: relative; }
+
+.nav_down {
+  position: absolute;
+  right: 0;
+  height: auto;
+  padding: 1em; }
 
 .main {
   overflow: hidden;
-  height: 85vh;
+  height: 75vh;
   width: 100vw; }
 
 .menu-left {
