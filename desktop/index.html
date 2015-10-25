@@ -130,14 +130,23 @@
         });
 
         $('body').on({
-            'mousewheel': function(e) {
+            'DOMMouseScroll mousewheel': function (e) {
                 e.preventDefault();
                 e.stopPropagation();
-                if (event.wheelDelta >= 0) {
-                    $.fn.fullpage.moveSlideLeft();
+
+                var wheelValue = 0;
+                if (typeof e.originalEvent.wheelDelta !== 'undefined') {
+                    wheelValue = e.originalEvent.wheelDelta;
+                } else {
+                    // Firefox.
+                    wheelValue = -e.originalEvent.detail;
+                }
+
+                if (wheelValue >= 0) {
+                    $(null).fullpage.moveSlideLeft();
                 }
                 else {
-                    $.fn.fullpage.moveSlideRight();
+                    $(null).fullpage.moveSlideRight();
                 }
             }
         })
