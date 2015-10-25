@@ -11,7 +11,7 @@
 <body>
     <div id="fullpage">
         <div class="section">
-            <section id="home" class="slide bright">
+            <section id="home" class="slide bright" data-anchor="navigation">
                 <div class="col-xs-2 height"></div>
                 <div class="col-xs-8 height">
                     <nav class="navigation col-xs-12">
@@ -126,7 +126,7 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             loopHorizontal: false,
-            anchors: ['home']
+            anchors: ['navigation']
         });
 
         $('body').on({
