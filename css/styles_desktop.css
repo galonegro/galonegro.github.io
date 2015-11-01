@@ -7,7 +7,17 @@
 body {
   color: #000000;
   background-color: #ffffff;
-  font-family: blogger; }
+  font-family: blogger;
+  font-size: 14px; }
+  @media screen and (min-width: 640px) {
+    body {
+      font-size: 10px; } }
+  @media screen and (min-width: 1024px) {
+    body {
+      font-size: 14px; } }
+  @media screen and (min-width: 1280px) {
+    body {
+      font-size: 18px; } }
 
 .left {
   background: url(../img/Lateral_izquierdo.svg);
@@ -33,6 +43,15 @@ body {
   width: 100%;
   height: 100%; }
 
+.logo_center {
+  background: url("../img/logo.jpg") center no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain; }
+
 section header, footer header {
   font-family: blogger;
   font-size: 4em;
@@ -46,19 +65,14 @@ section header, footer header {
 .subtitulo {
   text-align: center;
   font-size: 2em;
-  color: #c6000c; }
-
-.red_text {
-  color: #c6000c; }
+  color: #8e1632; }
 
 nav {
   text-align: right;
-  color: #c6000c; }
+  color: #8e1632; }
 
 .navigation {
-  padding-top: 2.5em;
-  padding-right: 2.5em;
-  padding-left: 2.5em;
+  padding: 2.5em;
   font-size: 1.5em; }
 
 .navigation a {
@@ -71,7 +85,8 @@ nav {
 
 .language {
   position: absolute;
-  bottom: 1em; }
+  bottom: 1em;
+  right: 3.75em; }
 
 .language a {
   padding-left: 2em; }
@@ -95,8 +110,11 @@ a:focus {
   text-decoration: none;
   color: inherit; }
 
+.space_below {
+  padding-bottom: 2vh; }
+
 .third {
-  height: 30vh;
+  height: 25vh;
   overflow: hidden; }
 
 .fourty {
@@ -109,54 +127,82 @@ a:focus {
 
 input {
   margin-top: 0.5em;
-  border-color: #c6000c !important;
+  border-color: #8e1632 !important;
   border-radius: 0 !important;
   border-width: 2px !important; }
 
 textarea {
   margin-top: 0.5em;
-  border-color: #c6000c !important;
+  border-color: #8e1632 !important;
   border-radius: 0 !important;
   border-width: 2px !important; }
 
 .btn, .btn:hover {
   margin-top: 0.5em;
-  background-color: #c6000c; }
+  background-color: #8e1632; }
 
 .bubble {
-  background-color: #c6000c;
+  background-color: #8e1632;
   color: #ffffff;
   padding: 1em;
   margin-top: 2em;
   border-left: solid white 30px;
-  border-right: solid white 15px; }
+  border-right: solid white 15px;
+  text-align: justify;
+  font-size: 0.9em; }
+
+.presentacion {
+  text-align: justify;
+  font-size: 0.9em; }
+
+.sabermais {
+  padding-top: 1.5em; }
 
 .hide {
   display: none; }
 
-/*
 .fp-controlArrow.fp-next {
-  right: 0;
+  right: 1em;
   border: none;
   width: 50px;
-  height: 100px;
-  background: url("../img/logo.jpg") no-repeat cover !important;
+  height: 60px;
+  background: url("../img/Flecha_blanca.svg") no-repeat !important;
+  cursor: pointer; }
+
+.fp-controlArrow.fp-prev {
+  right: 1em;
+  border: none;
+  width: 50px;
+  height: 60px;
+  background: url("../img/Flecha_blanca.svg") no-repeat !important;
   cursor: pointer;
-}*/
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
 .iago {
   background: url("../img/us/1.jpg") center no-repeat;
-  background-size: contain; }
+  background-size: 90%; }
 
 .samuel {
   background: url("../img/us/2.jpg") center no-repeat;
-  background-size: contain; }
+  background-size: 90%; }
 
 .tamara {
   background: url("../img/us/3.jpg") center no-repeat;
-  background-size: contain; }
+  background-size: 90%; }
 
 .kolega {
   background: url("../img/us/4.jpg") center no-repeat;
-  background-size: contain; }
+  background-size: 90%; }
+
+.text-right {
+  text-align: right; }
+
+.icon {
+  width: 3em;
+  margin: 1em; }
 
 /*# sourceMappingURL=styles_desktop.css.map */
