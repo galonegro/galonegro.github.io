@@ -5,9 +5,8 @@ $font_subtitle: $dark;
 
 $p-font-sizes: (
         null  : 14px,
-        640px : 10px,
-        1024px: 14px,
-        1280px : 18px
+        800px : 12px,
+        1024px: 14px
 );
 @mixin font-size($fs-map) {
   @each $fs-breakpoint, $fs-font-size in $fs-map {
@@ -262,4 +261,27 @@ textarea {
 .icon{
   width: 3em;
   margin: 1em;
+}
+
+.previo {
+  background: url("../img/Flecha_granate.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  background-size: 40%;
+  -o-background-size: 40%;
+}
+
+.siguiente {
+  background: url("../img/Flecha_granate.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  background-size: 40%;
+  -o-background-size: 40%;
 }

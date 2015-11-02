@@ -9,15 +9,12 @@ body {
   background-color: #ffffff;
   font-family: blogger;
   font-size: 14px; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 800px) {
     body {
-      font-size: 10px; } }
+      font-size: 12px; } }
   @media screen and (min-width: 1024px) {
     body {
       font-size: 14px; } }
-  @media screen and (min-width: 1280px) {
-    body {
-      font-size: 18px; } }
 
 .left {
   background: url(../img/Lateral_izquierdo.svg);
@@ -204,5 +201,26 @@ textarea {
 .icon {
   width: 3em;
   margin: 1em; }
+
+.previo {
+  background: url("../img/Flecha_granate.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  background-size: 40%;
+  -o-background-size: 40%; }
+
+.siguiente {
+  background: url("../img/Flecha_granate.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  background-size: 40%;
+  -o-background-size: 40%; }
 
 /*# sourceMappingURL=styles_desktop.css.map */
