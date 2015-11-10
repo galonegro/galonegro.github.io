@@ -192,10 +192,45 @@ textarea {
   color: $bright;
   padding: 1em;
   margin-top: 2em;
-  border-left: solid white 30px;
-  border-right: solid white 15px;
   text-align: justify;
   font-size: 0.9em;
+}
+.left_bbl:before{
+  width:30px;
+  height: 30px;
+  content: " ";
+  background-image: url(../img/Flecha_granate.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+  position: absolute;
+  left: 50px;
+  top: -22px;
+
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.right_bbl:before{
+  width:30px;
+  height: 30px;
+  content: " ";
+  background-image: url(../img/Flecha_granate.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+  position: absolute;
+  right: 50px;
+  top: -22px;
+
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .presentacion{
@@ -209,6 +244,10 @@ textarea {
 
 .hide{
   display: none;
+}
+
+.invisible{
+  opacity: 0;
 }
 
 .fp-controlArrow.fp-next {
@@ -284,4 +323,12 @@ textarea {
   -moz-background-size: 40%;
   background-size: 40%;
   -o-background-size: 40%;
+}
+
+#bubbles, #samuel, #iago, #tamara, #kole{
+  -moz-transition: all 1s ease-out;  /* FF4+ */
+  -o-transition: all 1s ease-out;  /* Opera 10.5+ */
+  -webkit-transition: all 1s ease-out;  /* Saf3.2+, Chrome */
+  -ms-transition: all 1s ease-out;  /* IE10 */
+  transition: all 1s ease-out;
 }

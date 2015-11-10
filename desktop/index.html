@@ -65,17 +65,17 @@
                         </div>
 
                         <div class="col-xs-12 third">
-                            <div class="col-xs-3 full iago" onclick="resetbubbles();showdiv('samuel');">
+                            <div class="col-xs-3 full iago" onclick="resetbubbles();showdiv('samuel');bublePadding(0);">
                             </div>
-                            <div class="col-xs-3 full samuel" onclick="resetbubbles();showdiv('iago');">
+                            <div class="col-xs-3 full samuel" onclick="resetbubbles();showdiv('iago');bublePadding(1);">
                             </div>
-                            <div class="col-xs-3 full tamara" onclick="resetbubbles();showdiv('tamara');">
+                            <div class="col-xs-3 full tamara" onclick="resetbubbles();showdiv('tamara');bublePadding(2);">s
                             </div>
-                            <div class="col-xs-3 full kolega" onclick="resetbubbles();showdiv('kole');">
+                            <div class="col-xs-3 full kolega" onclick="resetbubbles();showdiv('kole');bublePadding(3);">
                             </div>
                         </div>
                         <div id="intro" class="col-xs-12 third subtitulo sabermais">Se queres sabes mais sobre nos,<br>fai clic sobre as nosas fotos.</div>
-                        <div id="bubbles" class="col-xs-12 half bubble hide">
+                        <div id="bubbles" class="col-xs-6 half bubble hide">
                             <div id="samuel" class="col-xs-12 hide">Samuel Gago - Programador<br>Currante cheo de ganas de dar o mellor de si mesmo, sempre na busca das mellores solucións para os problemas aos que se enfronta, Anos de experiencia na consultoría o avalan. Scrum manager certificado.</div>
                             <div id="iago" class="col-xs-12 hide">Iago Laz - Programador<br>Cunha gran experiencia nos eidos da web, aporta a súa habilidade e coñecemento na maquetación e traballo con CMS como Drupal. Desenvolveuse toda a súa vida entre a creación de Páxinas web coa maior esixencia.</div>
                             <div id="tamara" class="col-xs-12 hide">Tamara Castro - Deseñadora<br>Pon a nota de estilo neste pragmático grupo, cos seus deseños xeniais e orixinales trae de cabeza ó resto do equipo para cumprir o que cabe na súa imaxinación. Atrévese a entrar en todas as formas de deseño, tanto gráfico coma web e industrial, e está preparada para iso.</div>
@@ -214,6 +214,13 @@
     });
 
     function resetbubbles(){
+        $('#bubbles').addClass('invisible');
+        $('#intro').addClass('invisible');
+        $('#samuel').addClass('invisible');
+        $('#iago').addClass('invisible');
+        $('#tamara').addClass('invisible');
+        $('#kole').addClass('invisible');
+        setTimeout('', 1000);
         $('#bubbles').addClass('hide');
         $('#intro').addClass('hide');
         $('#samuel').addClass('hide');
@@ -222,6 +229,9 @@
         $('#kole').addClass('hide');
     }
     function showdiv(id){
+        $('#bubbles').removeClass('invisible');
+        $('#'+id).removeClass('invisible');
+        setTimeout('', 1000);
         $('#bubbles').removeClass('hide');
         $('#'+id).removeClass('hide');
     }
@@ -236,6 +246,25 @@
     function showproyecto(number){
         $('#p'+number+"p1").removeClass('hide');
         $('#p'+number+"p2").removeClass('hide');
+    }
+
+    function bublePadding(number){
+        $('#bubbles').removeClass('col-xs-offset-6');
+        $('#bubbles').removeClass('col-xs-offset-3');
+        $('#bubbles').removeClass('right_bbl');
+        $('#bubbles').removeClass('left_bbl');
+        if(number==0){
+            $('#bubbles').addClass('left_bbl');
+        }else if(number==1){
+            $('#bubbles').addClass('col-xs-offset-3');
+            $('#bubbles').addClass('left_bbl');
+        }else if(number==2){
+            $('#bubbles').addClass('col-xs-offset-3');
+            $('#bubbles').addClass('right_bbl');
+        }else if(number==3){
+            $('#bubbles').addClass('col-xs-offset-6');
+            $('#bubbles').addClass('right_bbl');
+        }
     }
 
     window.mobileAndTabletcheck = function() {
