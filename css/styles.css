@@ -1,9 +1,13 @@
+@font-face {
+  font-family: blogger;
+  src: url(../fonts/Blogger_Sans.otf) format("opentype"); }
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #ffffff; }
+  background: #ffffff;
+  font-family: blogger; }
 
 a, a:hover {
   text-decoration: none;
@@ -31,37 +35,49 @@ a, a:hover {
   text-align: right;
   position: relative; }
 
-.nav_down {
-  position: absolute;
-  right: 0;
-  height: auto;
-  padding: 1em; }
-
 .main {
   overflow: hidden;
   height: 75vh;
   width: 100vw; }
 
 .menu-left {
-  height: 15vh;
-  text-align: center; }
+  height: 10vh;
+  text-align: center;
+  color: #c6000c; }
+  .menu-left img {
+    height: 8vh; }
 
 .menu-center {
-  height: 15vh;
-  text-align: center; }
+  height: 10vh;
+  text-align: center;
+  color: #c6000c; }
+  .menu-center img {
+    height: 8vh; }
 
 .menu-right {
-  height: 15vh;
-  text-align: center; }
+  height: 10vh;
+  text-align: center;
+  color: #c6000c; }
+  .menu-right img {
+    height: 8vh; }
 
 .head {
   overflow: hidden;
-  height: 10vh;
+  height: 13vh;
   width: 100vw; }
+
+.header_background {
+  background: url(../img/movil/cabecera.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 .usmenu {
   overflow: hidden;
-  height: 10vh;
+  height: 20vh;
   width: 100vw; }
 
 .samuel {
@@ -104,8 +120,9 @@ a, a:hover {
   text-align: center; }
 
 .back {
-  right: 0px;
-  height: 100%; }
+  left: 0px;
+  height: 40%;
+  top: 30%; }
 
 .portfolio_col1 {
   background-color: #122b40;
@@ -117,5 +134,17 @@ a, a:hover {
 
 .portfolio {
   height: 85vh; }
+
+.nav_down {
+  position: absolute;
+  right: 0;
+  height: auto;
+  padding-top: 1.6em; }
+
+.languaje {
+  color: #ffffff;
+  font-size: 0.9em; }
+  .languaje a {
+    padding-right: 1.75em; }
 
 /*# sourceMappingURL=styles.css.map */
