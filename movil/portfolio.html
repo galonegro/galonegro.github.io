@@ -10,12 +10,20 @@
 <body>
     <header class="head header_background col-xs-12">
         <img class="back col-xs-3" src="../img/movil/flecha_atras.svg" onclick="history.back();">
-        <img class="back col-xs-offset-6 col-xs-3" src="../img/movil/icon_proxectos.svg">
+        <img class="back col-xs-offset-6 col-xs-3" src="../img/movil/icon_proxectos_blanco.svg">
     </header>
     <div class="portfolio col-xs-12">
         <div class="col-xs-6 portfolio_col1"></div>
         <div class="col-xs-6 portfolio_col2"></div>
     </div>
 </body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/flowtype.js"></script>
+<script >
+    $(document).ready(function() {
+        $('body').flowtype({
+        });
+    });
+</script>
 </html>

@@ -10,24 +10,33 @@
 <body>
     <header class="head header_background col-xs-12">
         <img class="back col-xs-3" src="../img/movil/flecha_atras.svg" onclick="history.back();">
-        <img class="back col-xs-offset-6 col-xs-3" src="../img/movil/icon_sobre_nos.svg">
+        <img class="back col-xs-offset-6 col-xs-3" src="../img/movil/icono_sobrenos_blanco.svg">
     </header>
-    <nav class="usmenu col-xs-12 nopadding">
-        <a href="samuel.html"> <div class="menu-left samuel col-xs-3"></div> </a>
-        <a href="tamara.html"> <div class="menu-center tamara col-xs-3"></div> </a>
-        <a href="kolega.html"> <div class="menu-center kolega col-xs-3"></div> </a>
-        <a href="iago.html"> <div class="menu-right iago col-xs-3"></div> </a>
+    <div class="fondo_sm usmin col-xs-12"></div>
+    <div class="usmin col-xs-offset-1 col-xs-10">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia et tellus sit amet vestibulum. Quisque maximus tristique congue.
+    </div>
+    <nav class="usmenu nopadding col-xs-12">
+        <a href="samuel.html"> <div class="samuel col-xs-6"></div> </a>
+        <a href="tamara.html"> <div class="tamara col-xs-6"></div> </a>
+        <a href="kolega.html"> <div class="kolega col-xs-6"></div> </a>
+        <a href="iago.html"> <div class="iago col-xs-6"></div> </a>
     </nav>
-    <nav class="usmenu samuel col-xs-12">
+    <nav class="uspropio samuel col-xs-12">
     </nav>
-    <div class="head col-xs-12"></div>
-    <div class="text col-xs-10 col-xs-offset-1">
+    <div class="presentacion text bubble col-xs-10 col-xs-offset-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia et tellus sit amet vestibulum. Quisque maximus tristique congue.
         <br>
         Proin consectetur pretium lorem non dictum. Sed convallis viverra ante non fermentum. Nam ac consectetur libero. Praesent vehicula dapibus mauris eget dapibus.
-        <br>
-        Sed placerat lorem ac nisl convallis, id molestie turpis pharetra. Cras tincidunt leo sagittis, tincidunt risus eu, varius est.
     </div>
 </body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/flowtype.js"></script>
+<script >
+    $(document).ready(function() {
+        $('body').flowtype({
+        });
+    });
+</script>
 </html>

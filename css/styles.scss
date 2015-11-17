@@ -1,5 +1,5 @@
 $background: #ffffff;
-$rojo_base: rgba(198, 0, 12, 1);
+$rojo_base: #8e1632;
 $bright: #ffffff;
 $font_color: #000000;
 $font_subtitle: $rojo_base;
@@ -16,6 +16,7 @@ body {
   height: 100%;
   background: $background;
   font-family: blogger;
+  font-size: 40px;
 }
 
 a, a:hover{
@@ -38,6 +39,17 @@ a, a:hover{
   background-size: 60%;
   -o-background-size: contain;
 }
+
+.fondo_sm {
+  overflow: hidden;
+  background: url(../img/logo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+
 .language {
   overflow: hidden;
   height:10vh;
@@ -49,7 +61,7 @@ a, a:hover{
 
 .main {
   overflow: hidden;
-  height:75vh;
+  height:70vh;
   width:100vw;
 }
 
@@ -90,56 +102,62 @@ a, a:hover{
   background: url(../img/movil/cabecera.svg);
   background-position: center bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
+}
+
+.usmin {
+  overflow: hidden;
+  height:10vh;
 }
 
 .usmenu {
   overflow: hidden;
   height:20vh;
+  a{
+    padding-bottom: 10px;
+    height: 10vh;
+    div {
+      height: 10vh;
+    }
+  }
+}
+
+.uspropio {
+  overflow: hidden;
+  height:20vh;
   width:100vw;
+}
+
+.presentacion{
+  height: 20vh;
 }
 
 .samuel {
   background: url(../img/us/1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
 }
 
 .iago {
   background: url(../img/us/2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
 }
 
 .kolega {
   background: url(../img/us/4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
 }
 
 .tamara {
   background: url(../img/us/3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
 }
 
 .text {
@@ -170,7 +188,7 @@ a, a:hover{
   position: absolute;
   right: 0;
   height: auto;
-  padding-top: 1.6em;
+  padding-top: 1em;
 }
 
 .languaje{
@@ -179,4 +197,44 @@ a, a:hover{
   a{
     padding-right: 1.75em;
   }
+}
+
+.subtitulo{
+  padding-top: 70%;
+  text-align: center;
+  font-size: 1.2em;
+  color: $font_subtitle;
+}
+
+.bubble{
+  background-color: $rojo_base;
+  color: $bright;
+  padding: 1em;
+  margin-top: 1em;
+  text-align: justify;
+}
+
+.bubble:before{
+  width:80px;
+  height: 60px;
+  content: " ";
+  background-image: url(../img/Flecha_granate.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  left: 0px;
+  top: -40px;
+
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.maisinfo{
+  padding-top: 10vh;
+  font-size: 2em;
+  color: $font_subtitle;
 }
