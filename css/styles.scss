@@ -172,16 +172,14 @@ a, a:hover{
 
 .portfolio_col1{
   background-color: #122b40;
-  height:85vh;
 }
 
 .portfolio_col2{
   background-color: #398439;
-  height:85vh;
 }
 
 .portfolio{
-  height:85vh;
+  height: 65vh;
 }
 
 .nav_down {
@@ -238,3 +236,24 @@ a, a:hover{
   font-size: 2em;
   color: $font_subtitle;
 }
+
+.previo {
+  background: url("../img/Flecha_granate.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  background-size: 40%;
+  -o-background-size: 40%; }
+
+.siguiente {
+  background: url("../img/Flecha_granate.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  background-size: 40%;
+  -o-background-size: 40%; }

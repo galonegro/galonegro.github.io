@@ -136,15 +136,13 @@ a, a:hover {
   top: 30%; }
 
 .portfolio_col1 {
-  background-color: #122b40;
-  height: 85vh; }
+  background-color: #122b40; }
 
 .portfolio_col2 {
-  background-color: #398439;
-  height: 85vh; }
+  background-color: #398439; }
 
 .portfolio {
-  height: 85vh; }
+  height: 65vh; }
 
 .nav_down {
   position: absolute;
@@ -192,5 +190,26 @@ a, a:hover {
   padding-top: 10vh;
   font-size: 2em;
   color: #8e1632; }
+
+.previo {
+  background: url("../img/Flecha_granate.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  background-size: 40%;
+  -o-background-size: 40%; }
+
+.siguiente {
+  background: url("../img/Flecha_granate.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  background-size: 40%;
+  -o-background-size: 40%; }
 
 /*# sourceMappingURL=styles.css.map */
