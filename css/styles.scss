@@ -29,6 +29,10 @@ a, a:hover{
   margin: 0 !important;
 }
 
+.hide{
+  display: none;
+}
+
 .fondo {
   overflow: hidden;
   background: url(../img/logo.jpg);
@@ -257,3 +261,7 @@ a, a:hover{
   -moz-background-size: 40%;
   background-size: 40%;
   -o-background-size: 40%; }
+
+.padding_bajo{
+  padding-bottom: 2em;
+}

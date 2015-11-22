@@ -15,25 +15,49 @@
         <img class="back col-xs-offset-6 col-xs-3" src="../img/movil/icon_proxectos_blanco.svg">
     </header>
     <div class="col-xs-12">
-        <div class="portfolio col-xs-12">
+        <div id="p0" class="portfolio col-xs-12">
             <div class="col-xs-6">
-                <img class="col-xs-12" src="../img/galeria/p1i1.jpg">
-                <img class="col-xs-12" src="../img/galeria/p1i2.jpg">
+                <img class="col-xs-12 padding_bajo nopadding" src="../img/galeria/p1i2.jpg">
+                <img class="col-xs-12 nopadding" src="../img/galeria/p2i2.jpg">
             </div>
             <div class="col-xs-6">
-                <div class="col-xs-12">
+                <div class="col-xs-12 padding_bajo nopadding">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia et tellus sit amet vestibulum. Quisque maximus tristique congue.
                 </div>
-                <img class="col-xs-12" src="../img/galeria/p1i3.jpg">
+                <img class="col-xs-12 nopadding" src="../img/galeria/p1i3.jpg">
+            </div>
+        </div>
+        <div id="p1" class="portfolio hide col-xs-12">
+            <div class="col-xs-6">
+                <img class="col-xs-12 padding_bajo nopadding" src="../img/galeria/LOGO%20CASA%20PEREIRA.png">
+                <img class="col-xs-12 nopadding" src="../img/galeria/p3i1.png">
+            </div>
+            <div class="col-xs-6">
+                <div class="col-xs-12 padding_bajo nopadding">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia et tellus sit amet vestibulum. Quisque maximus tristique congue.
+                </div>
+                <img class="col-xs-12 nopadding" src="../img/galeria/p3i2.png">
+            </div>
+        </div>
+        <div id="p2" class="portfolio hide col-xs-12">
+            <div class="col-xs-6">
+                <img class="col-xs-12 padding_bajo nopadding" src="../img/galeria/p2i1.jpg">
+                <img class="col-xs-12 nopadding" src="../img/galeria/p2i2.jpg">
+            </div>
+            <div class="col-xs-6">
+                <div class="col-xs-12 padding_bajo nopadding">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia et tellus sit amet vestibulum. Quisque maximus tristique congue.
+                </div>
+                <img class="col-xs-12 nopadding" src="../img/galeria/p2i3.jpg">
             </div>
         </div>
         <div class="col-xs-offset-1 col-xs-1 previo"></div>
         <div id="slider_proyectos" class="col-xs-8">
-            <img class="col-xs-6" src="../img/galeria/p2i1.jpg">
-            <img class="col-xs-6" src="../img/galeria/LOGO%20CASA%20PEREIRA.png">
-            <img class="col-xs-6" src="../img/galeria/p2i1.jpg">
-            <img class="col-xs-6" src="../img/galeria/LOGO%20CASA%20PEREIRA.png">
-            <img class="col-xs-6" src="../img/galeria/p2i1.jpg">
+            <img onclick="resetproyectos();showproyecto(2);" class="col-xs-6" src="../img/galeria/p2i1.jpg">
+            <img onclick="resetproyectos();showproyecto(1);" class="col-xs-6" src="../img/galeria/LOGO%20CASA%20PEREIRA.png">
+            <img onclick="resetproyectos();showproyecto(2);" class="col-xs-6" src="../img/galeria/p2i1.jpg">
+            <img onclick="resetproyectos();showproyecto(1);" class="col-xs-6" src="../img/galeria/LOGO%20CASA%20PEREIRA.png">
+            <img onclick="resetproyectos();showproyecto(2);" class="col-xs-6" src="../img/galeria/p2i1.jpg">
         </div>
         <div class="col-xs-1 siguiente"></div>
     </div>
@@ -67,5 +91,17 @@
         var divHeight = jQuery('#slider_proyectos').height();
         $('.siguiente').css('min-height', divHeight+'px');
     });
+
+    function resetproyectos(){
+        $('#p0').addClass('hide');
+        $('#p1').addClass('hide');
+        $('#p2').addClass('hide');
+    }
+
+    function showproyecto(number){
+        $('#p'+number).removeClass('hide');
+        $('#p'+number).removeClass('hide');
+    }
+
 </script>
 </html>
