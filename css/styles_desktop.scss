@@ -3,6 +3,8 @@ $dark: #8e1632;
 $font_color: #000000;
 $font_subtitle: $dark;
 
+$limit_fonts: 1000px;
+
 $p-font-sizes: (
         null  : 14px,
         800px : 12px,
@@ -177,7 +179,7 @@ textarea {
   border-width: 2px !important;
 }
 
-.btn, .btn:hover {
+.btn, .btn:hover, .btn:active, .btn:focus, .btn:target, .btn:link {
   margin-top: 0.5em;
   background-color: $dark;
 }
@@ -186,9 +188,13 @@ textarea {
   background-color: $dark;
   color: $bright;
   padding: 1em;
-  margin-top: 2em;
+  margin-top: 1em;
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  @media screen and (min-width: $limit_fonts) {
+    font-size: 0.9em;
+    margin-top: 2em;
+  }
 }
 
 .left_bbl:before{
@@ -231,7 +237,11 @@ textarea {
 
 .presentacion{
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  padding: 0px;
+  @media screen and (min-width: $limit_fonts) {
+    font-size: 1em;
+  }
 }
 
 .sabermais{

@@ -131,7 +131,7 @@ textarea {
   border-radius: 0 !important;
   border-width: 2px !important; }
 
-.btn, .btn:hover {
+.btn, .btn:hover, .btn:active, .btn:focus, .btn:target, .btn:link {
   margin-top: 0.5em;
   background-color: #8e1632; }
 
@@ -139,9 +139,13 @@ textarea {
   background-color: #8e1632;
   color: #ffffff;
   padding: 1em;
-  margin-top: 2em;
+  margin-top: 1em;
   text-align: justify;
-  font-size: 0.9em; }
+  font-size: 0.8em; }
+  @media screen and (min-width: 1000px) {
+    .bubble {
+      font-size: 0.9em;
+      margin-top: 2em; } }
 
 .left_bbl:before {
   width: 30px;
@@ -179,7 +183,11 @@ textarea {
 
 .presentacion {
   text-align: justify;
-  font-size: 0.9em; }
+  font-size: 0.8em;
+  padding: 0px; }
+  @media screen and (min-width: 1000px) {
+    .presentacion {
+      font-size: 1em; } }
 
 .sabermais {
   padding-top: 1.5em; }
