@@ -62,7 +62,7 @@ $(document).ready(function() {
                     swal({title: "Enviado!",text: "Recibimos o teu mail, por favor, se pacente e agarda a nosa resposta. Moitas grazas!",type: "success",confirmButtonText: "Aceptar" });
                 },
                 error: function(data) {
-                    swal({title: "Error!",text: "Houbo un erro ó enviar a mensaxe, por favor, contacta connosco a través de info@galonegro.es",type: "error",confirmButtonText: "Aceptar" });
+                    swal({title: "Error!",text: "Houbo un erro ï¿½ enviar a mensaxe, por favor, contacta connosco a travï¿½s de info@galonegro.es",type: "error",confirmButtonText: "Aceptar" });
                 }
             });
             e.preventDefault();
@@ -108,21 +108,39 @@ function showproyecto(number){
 }
 
 function bublePadding(number){
-    $('#bubbles').removeClass('col-xs-offset-6');
-    $('#bubbles').removeClass('col-xs-offset-3');
-    $('#bubbles').removeClass('right_bbl');
-    $('#bubbles').removeClass('left_bbl');
-    if(number==0){
-        $('#bubbles').addClass('left_bbl');
-    }else if(number==1){
-        $('#bubbles').addClass('col-xs-offset-3');
-        $('#bubbles').addClass('left_bbl');
-    }else if(number==2){
-        $('#bubbles').addClass('col-xs-offset-3');
-        $('#bubbles').addClass('right_bbl');
-    }else if(number==3){
-        $('#bubbles').addClass('col-xs-offset-6');
-        $('#bubbles').addClass('right_bbl');
+    if (document.documentElement.clientWidth > 992) {
+        $('#bubbles').removeClass('col-xs-offset-6');
+        $('#bubbles').removeClass('col-xs-offset-3');
+        $('#bubbles').removeClass('right_bbl');
+        $('#bubbles').removeClass('left_bbl');
+        if (number == 0) {
+            $('#bubbles').addClass('left_bbl');
+        } else if (number == 1) {
+            $('#bubbles').addClass('col-xs-offset-3');
+            $('#bubbles').addClass('left_bbl');
+        } else if (number == 2) {
+            $('#bubbles').addClass('col-xs-offset-3');
+            $('#bubbles').addClass('right_bbl');
+        } else if (number == 3) {
+            $('#bubbles').addClass('col-xs-offset-6');
+            $('#bubbles').addClass('right_bbl');
+        }
+    }else{
+        $('#bubbles').removeClass('col-xs-offset-6');
+        $('#bubbles').removeClass('col-xs-offset-3');
+        $('#bubbles').removeClass('right_bbl');
+        $('#bubbles').removeClass('left_bbl');
+        if (number == 0) {
+            $('#bubbles').addClass('left_bbl');
+        } else if (number == 1) {
+            $('#bubbles').addClass('col-xs-offset-3');
+            $('#bubbles').addClass('left_bbl');
+        } else if (number == 2) {
+            $('#bubbles').addClass('right_bbl');
+        } else if (number == 3) {
+            $('#bubbles').addClass('col-xs-offset-3');
+            $('#bubbles').addClass('right_bbl');
+        }
     }
 }
 
