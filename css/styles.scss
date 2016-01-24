@@ -17,6 +17,9 @@ body {
   background: $background;
   font-family: blogger;
   font-size: 40px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
   ::-webkit-scrollbar-track {
     background-color: #F5F5F5;
   }
@@ -196,7 +199,7 @@ a, a:hover{
 
 .portfolio{
   height: 70vh;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   overflow-y: scroll;
 }
 
@@ -294,4 +297,8 @@ a, a:hover{
 .bot{
   position: fixed;
   bottom: 0;
+}
+
+.tenth{
+  height: 15vh;
 }
