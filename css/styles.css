@@ -9,6 +9,16 @@ body {
   background: #ffffff;
   font-family: blogger;
   font-size: 40px; }
+  html ::-webkit-scrollbar-track,
+  body ::-webkit-scrollbar-track {
+    background-color: #F5F5F5; }
+  html ::-webkit-scrollbar,
+  body ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5; }
+  html ::-webkit-scrollbar-thumb,
+  body ::-webkit-scrollbar-thumb {
+    background-color: #8e1632; }
 
 a, a:hover {
   text-decoration: none;
@@ -145,13 +155,15 @@ a, a:hover {
   background-color: #398439; }
 
 .portfolio {
-  height: 65vh; }
+  height: 70vh;
+  margin-bottom: 5vh;
+  overflow-y: scroll; }
 
 .nav_down {
   position: absolute;
   right: 0;
   height: auto;
-  padding-top: 1em; }
+  padding-bottom: 1em; }
 
 .languaje {
   color: #ffffff;
@@ -216,6 +228,19 @@ a, a:hover {
   -o-background-size: 40%; }
 
 .padding_bajo {
-  padding-bottom: 2em; }
+  padding-bottom: 2em !important; }
+
+.padding_alto {
+  padding-top: 2em !important; }
+
+.pro_title {
+  font-weight: bold;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  padding-top: 1em; }
+
+.bot {
+  position: fixed;
+  bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */

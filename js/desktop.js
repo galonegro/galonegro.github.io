@@ -2,6 +2,40 @@
  * Created by samuel on 29/11/2015.
  */
 $(document).ready(function() {
+    var order=1;
+    function changeBgp1() {
+        order=(order+1); if(order>2){order=1;}
+        $('#p1').removeClass("p1i1");
+        $('#p1').removeClass("p1i2");
+        $('#p1').addClass("p1i"+order);
+        $('#p1').fadeIn(1000);
+    }
+    var orderp2=1;
+    function changeBgp2() {
+        orderp2=(orderp2+1); if(orderp2>3){orderp2=1;}
+        $('#p2').removeClass("p2i1");
+        $('#p2').removeClass("p2i2");
+        $('#p2').removeClass("p2i3");
+        $('#p2').addClass("p2i"+orderp2);
+        $('#p2').fadeIn(1000);
+    }
+    var orderp3=1;
+    function changeBgp3() {
+        orderp3=(orderp3+1); if(orderp3>4){orderp3=1;}
+        $('#p3').removeClass("p3i1");
+        $('#p3').removeClass("p3i2");
+        $('#p3').removeClass("p3i3");
+        $('#p3').removeClass("p3i4");
+        $('#p3').addClass("p3i"+orderp3);
+        $('#p3').fadeIn(1000);
+    }
+    function changeBackgroundSmoothly() {
+        $('#p1').fadeOut(1000, changeBgp1);
+        $('#p2').fadeOut(1000, changeBgp2);
+        $('#p3').fadeOut(1000, changeBgp3);
+    }
+
+    setInterval(changeBackgroundSmoothly,5000);
 
     $('#fullpage').fullpage({
         loopHorizontal: false,
@@ -67,6 +101,9 @@ $(document).ready(function() {
             });
             e.preventDefault();
         })
+
+        var divHeight = jQuery('#contacto_form').height();
+        $('#contacto_stock').css('min-height', divHeight+'px');
     });
 });
 

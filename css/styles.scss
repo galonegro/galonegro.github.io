@@ -17,6 +17,18 @@ body {
   background: $background;
   font-family: blogger;
   font-size: 40px;
+  ::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $rojo_base;
+  }
 }
 
 a, a:hover{
@@ -183,14 +195,16 @@ a, a:hover{
 }
 
 .portfolio{
-  height: 65vh;
+  height: 70vh;
+  margin-bottom: 5vh;
+  overflow-y: scroll;
 }
 
 .nav_down {
   position: absolute;
   right: 0;
   height: auto;
-  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .languaje{
@@ -263,5 +277,21 @@ a, a:hover{
   -o-background-size: 40%; }
 
 .padding_bajo{
-  padding-bottom: 2em;
+  padding-bottom: 2em !important;
+}
+
+.padding_alto{
+  padding-top: 2em !important;
+}
+
+.pro_title{
+  font-weight: bold;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.bot{
+  position: fixed;
+  bottom: 0;
 }

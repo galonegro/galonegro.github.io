@@ -38,13 +38,20 @@ body {
   height: 100%; }
 
 .logo_center {
-  background: url("../img/logo.jpg") center no-repeat;
-  width: 100%;
-  height: 100%;
+  background: url("../img/logo.jpg") center top no-repeat;
+  width: 80%;
+  height: 80%;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
   -o-background-size: contain; }
+
+.contacto_stock {
+  background: url("../img/contacto.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 section header, footer header {
   font-family: blogger;
@@ -52,6 +59,11 @@ section header, footer header {
   position: relative;
   width: 100%;
   text-align: center; }
+
+.pro_title {
+  font-family: blogger;
+  font-size: 1.3em;
+  color: #8e1632; }
 
 .height {
   height: 100%; }
@@ -105,7 +117,7 @@ a:focus {
   color: inherit; }
 
 .space_below {
-  padding-bottom: 2vh; }
+  padding-bottom: 1vh; }
 
 .third {
   height: 25vh;
@@ -114,6 +126,15 @@ a:focus {
 .fourty {
   height: 40vh;
   margin-bottom: 1em;
+  overflow: hidden; }
+
+.fourth {
+  height: 45vh;
+  margin-bottom: 1em;
+  overflow: hidden; }
+
+.twentyth {
+  height: 15vh;
   overflow: hidden; }
 
 .full {
@@ -182,12 +203,17 @@ textarea {
   transform: rotate(90deg); }
 
 .presentacion {
-  text-align: justify;
+  text-align: center;
   font-size: 0.8em;
   padding: 0px; }
   @media screen and (min-width: 1000px) {
     .presentacion {
-      font-size: 1em; } }
+      font-size: 0.8em; } }
+
+.contacto_texto {
+  text-align: left;
+  font-size: 0.8em;
+  padding: 0px; }
 
 .sabermais {
   padding-top: 1.5em; }

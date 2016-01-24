@@ -1,23 +1,14 @@
 .p1i1 {
   background: url(../img/galeria/p1i1.jpg);
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  -o-background-size: contain; }
+  -webkit-background-size: 60%;
+  -moz-background-size: 60%;
+  background-size: 60%;
+  -o-background-size: 60%; }
 
 .p1i2 {
   background: url(../img/galeria/p1i2.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  -o-background-size: contain; }
-
-.p1i3 {
-  background: url(../img/galeria/p1i3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -72,6 +63,15 @@
 
 .p3i3 {
   background: url(../img/galeria/p3i3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain; }
+
+.p3i4 {
+  background: url(../img/galeria/p3i4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
