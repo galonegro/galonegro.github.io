@@ -8,9 +8,8 @@ body {
   height: 100%;
   background: #ffffff;
   font-family: blogger;
-  font-size: 40px;
-  overflow-x: hidden;
-  overflow-y: hidden; }
+  font-size: 1.25em;
+  overflow-x: hidden; }
   html ::-webkit-scrollbar-track,
   body ::-webkit-scrollbar-track {
     background-color: #F5F5F5; }
@@ -29,6 +28,9 @@ a, a:hover {
 .nopadding {
   padding: 0 !important;
   margin: 0 !important; }
+
+.padbot {
+  padding-bottom: 2em !important; }
 
 .hide {
   display: none; }
@@ -99,48 +101,69 @@ a, a:hover {
 
 .usmin {
   overflow: hidden;
+  height: 30vh;
+  margin-top: 10vh; }
+
+.usminlandscape {
+  overflow: scroll;
+  height: 80vh;
+  margin-top: 5vh; }
+
+.divmin {
+  overflow: hidden;
   height: 10vh; }
 
 .usmenu {
-  overflow: hidden;
-  height: 20vh; }
+  height: 40vh; }
   .usmenu a {
     padding-bottom: 10px;
-    height: 10vh; }
+    height: 20vh; }
     .usmenu a div {
-      height: 10vh; }
+      height: 20vh; }
+
+.usmenulandscape {
+  margin-top: 5vh; }
+  .usmenulandscape a {
+    height: 40vh; }
+    .usmenulandscape a div {
+      height: 40vh; }
 
 .uspropio {
   overflow: hidden;
-  height: 20vh;
+  height: 40vh;
+  margin-top: 5vh;
   width: 100vw; }
 
-.presentacion {
-  height: 20vh; }
+.landscapeuspropio {
+  overflow: hidden;
+  height: 75vh;
+  margin-top: 5vh; }
 
 .samuel {
   background: url(../img/us/1.jpg);
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .iago {
   background: url(../img/us/2.jpg);
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .kolega {
   background: url(../img/us/4.jpg);
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .tamara {
   background: url(../img/us/3.jpg);
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.bg_top {
+  background-position: center top; }
+
+.bg_center {
+  background-position: center center; }
 
 .text {
   text-align: center; }
@@ -157,24 +180,26 @@ a, a:hover {
   background-color: #398439; }
 
 .portfolio {
-  height: 70vh;
   margin-bottom: 2vh;
-  overflow-y: scroll; }
+  padding: 0; }
 
 .nav_down {
   position: absolute;
   right: 0;
   height: auto;
   padding-bottom: 1em; }
+  @media screen and (orientation: portrait) {
+    .nav_down {
+      margin-top: 1em; } }
 
 .languaje {
   color: #ffffff;
-  font-size: 0.9em; }
+  font-size: 1.2em; }
   .languaje a {
     padding-right: 1.75em; }
 
 .subtitulo {
-  padding-top: 70%;
+  padding-top: 80%;
   text-align: center;
   font-size: 1.2em;
   color: #8e1632; }
@@ -183,8 +208,11 @@ a, a:hover {
   background-color: #8e1632;
   color: #ffffff;
   padding: 1em;
-  margin-top: 1em;
+  margin-top: 40px;
   text-align: justify; }
+  @media screen and (orientation: landscape) {
+    .bubble {
+      margin-top: 5vh; } }
 
 .bubble:before {
   width: 80px;
@@ -194,14 +222,20 @@ a, a:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  position: absolute;
-  left: 0px;
-  top: -40px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg); }
+  position: absolute; }
+  @media screen and (orientation: portrait) {
+    .bubble:before {
+      left: 0px;
+      top: -40px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg); } }
+  @media screen and (orientation: landscape) {
+    .bubble:before {
+      left: -45px;
+      top: 0px; } }
 
 .maisinfo {
   padding-top: 10vh;
@@ -209,7 +243,7 @@ a, a:hover {
   color: #8e1632; }
 
 .previo {
-  background: url("../img/Flecha_granate.svg") center no-repeat;
+  background: url("../img/Flecha_granate.svg") left no-repeat;
   cursor: pointer;
   -webkit-background-size: 40%;
   -moz-background-size: 40%;
@@ -217,7 +251,7 @@ a, a:hover {
   -o-background-size: 40%; }
 
 .siguiente {
-  background: url("../img/Flecha_granate.svg") center no-repeat;
+  background: url("../img/Flecha_granate.svg") left no-repeat;
   cursor: pointer;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -247,5 +281,17 @@ a, a:hover {
 
 .tenth {
   height: 15vh; }
+
+.sixfive {
+  height: 75vh;
+  overflow-y: scroll; }
+
+@media screen and (orientation: landscape) {
+  .portrait {
+    display: none; } }
+
+@media screen and (orientation: portrait) {
+  .landscape {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */

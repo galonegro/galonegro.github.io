@@ -6,16 +6,20 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../sweetalert/dist/sweetalert.css">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Galo Negro Portfolio</title>
+    <meta name="description" content="Galo Negro portfolio. Diseño web y gráfico. Desarrollo de webs personales y de negocio, aplicaciones y presencia online. Identidades corporativas">
+    <meta NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    <meta name="keywords" content="diseño,web,gráfico,design,graphic,portfolio,html,identidad corporativa">
+    <meta name="author" content="Galo Negro">
 </head>
 <body>
     <header class="head header_background col-xs-12">
-        <img class="back col-xs-3" src="../img/movil/flecha_atras.svg" onclick="history.back();">
+        <a href="index.html"><img class="back col-xs-3" src="../img/movil/flecha_atras.svg"></a>
         <img class="back col-xs-offset-6 col-xs-3" src="../img/movil/icno_contacto_blanco.svg">
     </header>
-    <div class="fondo_sm usmin col-xs-12"></div>
-    <div class="usmin col-xs-12"></div>
-    <div class="text col-xs-10 col-xs-offset-1">
+    <div class="fondo_sm divmin col-xs-12"></div>
+    <div class="text sixfive col-xs-12">
         <form id="contactform" role="form">
             <div class="form-group">
                 <label for="email">Email</label>
@@ -23,7 +27,7 @@
                        placeholder="Introduce o teu email">
             </div>
             <div class="form-group">
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nome</label>
                 <input type="text" class="form-control input-lg" id="nombre" placeholder="Nome">
             </div>
             <div class="form-group">
@@ -37,25 +41,5 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../sweetalert/dist/sweetalert.min.js"></script>
-<script >
-    $(document).ready(function() {
-        $( document ).ready(function() {
-            $('#contactform').submit(function(e) {
-                $.ajax({
-                    url: "//formspree.io/samuel.gago@galonegro.es",
-                    method: "POST",
-                    data: {message: $('#nombre').val()+" - "+$('#contenido').val(), _replyto: $('#email').val(),  },
-                    dataType: "json",
-                    success: function(data) {
-                        swal({title: "Enviado!",text: "Recibimos o teu mail, por favor, se pacente e agarda a nosa resposta. Moitas grazas!",type: "success",confirmButtonText: "Aceptar" });
-                    },
-                    error: function(data) {
-                        swal({title: "Error!",text: "Houbo un erro ó enviar a mensaxe, por favor, contacta connosco a través de info@galonegro.es",type: "error",confirmButtonText: "Aceptar" });
-                    }
-                });
-                e.preventDefault();
-            })
-        });
-    });
-</script>
+<script src="../js/mail.js"></script>
 </html>
