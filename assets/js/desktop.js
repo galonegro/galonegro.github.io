@@ -58,8 +58,8 @@ $(document).ready(function() {
         arrows: false,
         dots: false,
         infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 4
+        slidesToShow: 3,
+        slidesToScroll: 2
     });
 
     $('body').on({

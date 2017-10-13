@@ -7,7 +7,7 @@ $(document).ready(function() {
         arrows: false,
         dots: false,
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 2
     });
 
@@ -28,6 +28,7 @@ function resetproyectos(){
     $('#p0').addClass('hide');
     $('#p1').addClass('hide');
     $('#p2').addClass('hide');
+    $('#p4').addClass('hide');
 }
 
 function showproyecto(number){
