@@ -29,10 +29,22 @@ $(document).ready(function() {
         $('#p3').addClass("p3i"+orderp3);
         $('#p3').fadeIn(1000);
     }
+
+    var orderp4=1;
+    function changeBgp4() {
+        orderp4=(orderp4+1); if(orderp4>4){orderp4=1;}
+        $('#p4').removeClass("p4i1");
+        $('#p4').removeClass("p4i2");
+        $('#p4').removeClass("p4i3");
+        $('#p4').removeClass("p4i4");
+        $('#p4').addClass("p4i"+orderp4);
+        $('#p4').fadeIn(1000);
+    }
     function changeBackgroundSmoothly() {
         $('#p1').fadeOut(1000, changeBgp1);
         $('#p2').fadeOut(1000, changeBgp2);
         $('#p3').fadeOut(1000, changeBgp3);
+        $('#p4').fadeOut(1000, changeBgp4);
     }
 
     setInterval(changeBackgroundSmoothly,5000);

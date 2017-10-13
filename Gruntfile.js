@@ -16,10 +16,10 @@ module.exports = function (grunt) {
             },
             js: {
                 files: [{
-                    cwd: 'js/',  // ruta de nuestro javascript fuente
+                    cwd: 'assets/js/',  // ruta de nuestro javascript fuente
                     expand: true,    // ingresar a las subcarpetas
                     src: '*.js',     // patrón relativo a cwd
-                    dest: 'dist/js/'  // destino de los archivos compresos
+                    dest: 'dist/assets/js/'  // destino de los archivos compresos
                 }]
             }
         },
@@ -57,35 +57,35 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'img',
+                    cwd: 'assets/img',
                     src: ['**/**/**/**/**/**/**/**/**/*.{png,jpg,gif}'],
-                    dest: 'dist/img'
+                    dest: 'dist/assets/img'
                 }]
             }
         },
         copy: {
             img: {
-                cwd: 'img',
+                cwd: 'assets/img',
                 src: [ '**/**/**/**/**/**/**/**/**/*.svg','**/**/**/**/**/**/**/**/**/*.ico' ],
-                dest: 'dist/img',
+                dest: 'dist/assets/img',
                 expand: true
             },
             font: {
-                cwd: 'fonts',
+                cwd: 'assets/fonts',
                 src: [ '**/*.otf' ],
-                dest: 'dist/fonts',
+                dest: 'dist/assets/fonts',
                 expand: true
             },
             slick: {
-                cwd: 'slick',
+                cwd: 'libs/slick',
                 src: [ '**/*' ],
-                dest: 'dist/slick',
+                dest: 'dist/libs/slick',
                 expand: true
             },
             sweetalert: {
-                cwd: 'sweetalert',
+                cwd: 'libs/sweetalert',
                 src: [ '**/*' ],
-                dest: 'dist/sweetalert',
+                dest: 'dist/libs/sweetalert',
                 expand: true
             }
         },
@@ -93,9 +93,9 @@ module.exports = function (grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'css',
+                    cwd: 'assets/css',
                     src: [ '**/*.css' ],
-                    dest: 'dist/css'
+                    dest: 'dist/assets/css'
                 }]
             }
         },
